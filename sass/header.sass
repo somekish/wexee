@@ -1,0 +1,134 @@
+$main_gradient: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)
+$font_size_normal: 16px
+$line_height_normal: 19px
+$hover: rgb(196, 145, 88)
+
+* 
+	margin: 0
+	padding: 0
+	text-decoration: none
+	list-style: none
+	font-family: sans-serif
+	font-weight: normal
+
+
+
+h1 
+	text-align: center
+	font-size: 40px
+	line-height: 55px
+
+h2 
+	font-size: 35px
+	line-height: 48px
+	text-align: center
+
+.container 
+	max-width: 1323px
+	margin: 0 auto
+
+
+
+.header 
+	background: $main_gradient
+	color: white
+	padding-bottom: 148px
+
+
+// Навигация
+.header--nav 
+	display: flex
+	justify-content: space-between
+	width: 100%
+
+.nav--ul 
+	display: flex
+	height: 39px
+	line-height: 39px
+	font-size: $font_size_normal
+	& li 
+		height: 39px
+		margin-top: 25px
+		display: flex
+		padding: 0px 20px
+		&:hover 
+			transition-duration: 1s
+			background-color: $hover
+			border-radius: 100px
+		
+	
+	& a 
+		vertical-align: middle
+		color: white
+		
+
+	
+	& :not(:last-child) 
+		margin-right: 19px
+	
+
+
+.nav--button 
+	background-color: white
+	border-radius: 100px
+	& a 
+		color: black
+		
+
+// Форма поиска
+
+.header--form 
+	width: 739px
+	margin: 0 auto
+	padding-top: 100px
+	& form 
+		display: flex
+		justify-content: space-between
+		height: 49px
+	
+	& input 
+		flex-basis: 403px
+		display: block
+		font-size: $font_size_normal
+		line-height: $line_height_normal
+		box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25)
+		border-radius: 3px
+		border: none
+		padding: 0 20px
+	
+	& select 
+		flex-basis: 163px
+		display: block
+		font-size: $font_size_normal
+		line-height: $line_height_normal
+		box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25)
+		border-radius: 3px
+		border: none
+	
+	& button 
+		display: flex
+		justify-content: center
+		flex-basis: 163px
+		font-size: $font_size_normal
+		line-height: $line_height_normal
+		box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25)
+		border-radius: 3px
+		border: none
+		&:hover 
+			background-color: $hover
+			transition-duration: 1s
+		
+		& p 
+			margin-left: 10px
+		
+	
+
+// main 
+.nav--logo 
+	cursor: pointer
+	& svg 
+		margin: 5px
+	
+
+.nav_ul-center 
+	padding: 5x

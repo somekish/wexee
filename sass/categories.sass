@@ -1,0 +1,40 @@
+$hover: rgb(196, 145, 88)
+$main_gradient: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)
+$font_size_normal: 16px
+$line_height_normal: 19px
+.categories 
+	width: 726px
+	margin: 0 auto
+	margin-top: 76px
+	& ul 
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: baseline
+		
+	
+	& li 
+		width: 242px
+		text-align: center
+		margin-bottom: 90px
+		&:hover 
+			stroke: $hover
+				fill: $hover
+			& svg 
+				stroke: $hover
+				fill: $hover
+				box-shadow: $hover 5px 5px
+				transition-duration: 1s
+			
+			
+		
+	
+	& a 
+		color: black
+	
+	& svg 
+		margin-bottom: 10px
+	
+
+.categories--list 
+    margin-top: 100px

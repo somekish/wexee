@@ -1,0 +1,42 @@
+$hover: rgb(196, 145, 88)
+$main_gradient: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)
+$font_size_normal: 16px
+$line_height_normal: 19px
+// slider
+.slider 
+	margin-top: 44px
+	margin-bottom: 100px
+	& ul 
+		display: flex
+		justify-content: space-between
+	
+	& img 
+		width: 316px
+	
+	& button 
+		width: 58px
+		height: 58px
+		position: relative
+		border-radius: 100%
+		top: 95px
+		cursor: pointer
+		&:hover 
+			background-color: $hover
+			fill: $hover
+			stroke: $hover
+		
+	
+	& .slider-left 
+		background-image: url(../../img/main/img_switcher/Slider_left.svg)
+		left: 29px
+	
+	& .slider-right 
+		background-image: url(../../img/main/img_switcher/Slider_right.svg)
+		right: 29px
+	
+
+
+.audio 
+	& audio 
+		width: 100%
+	

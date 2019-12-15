@@ -1,0 +1,246 @@
+* 
+	margin: 0
+	padding: 0
+	text-decoration: none
+    list-style: none
+    font-size: 16px
+    line-height: 19px
+	font-family: sans-serif
+    font-weight: normal
+    font-style: normal
+    font-weight: normal
+    color: #2C2727
+
+
+$main_gradient: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)
+html 
+    overflow: hidden
+
+.go-home 
+    cursor: pointer
+
+
+svg 
+    position: absolute
+    top: 10px
+    left: 30vw
+    z-index: 3
+
+.h2 
+    font-size: 35px
+    line-height: 40px
+    color: #2C2727
+    font-style: normal
+    font-weight: normal
+
+.hide 
+    display: none
+
+.go-left 
+    animation: go-left 1s
+
+.go-right 
+    animation: go-right 1s
+
+.input 
+    width: 477px
+    height: 48px
+    border: 1px solid #EBEBEB
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+    border-radius: 3px
+    padding-left: 15px
+
+.submit 
+    width: 192px
+    height: 39px
+    background: #2F5FED
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25)
+    border-radius: 100px
+    color: white
+    cursor: pointer
+
+.button 
+    width: 192px
+    height: 39px
+    background: #FFFFFF
+    border-radius: 100px
+    cursor: pointer
+
+.block1 
+    background: $main_gradient
+    position: absolute
+    top: -300px
+    bottom: -300px
+    left: -100px
+    right: 55vw
+    transform: rotate(10deg)
+ 
+
+@keyframes go-right 
+    0% 
+        left: -100px
+        right: 55vw
+        transform: rotate(10deg)
+    
+    100% 
+        left: 55vw
+        right: -100px
+        transform: rotate(-10deg)
+    
+
+.block2 
+    background: $main_gradient
+    position: absolute
+    top: -300px
+    bottom: -300px
+    left: 55vw
+    right: -100px
+    transform: rotate(-10deg)
+
+@keyframes go-left 
+    0% 
+        left: 55vw
+        right: -100px
+        transform: rotate(-10deg)
+    
+    100% 
+        left: -100px
+        right: 55vw
+        transform: rotate(10deg)
+    
+    
+
+
+// Разметка 
+.wrapper 
+    width: 100vw
+    height: 100vh
+    background-repeat: no-repeat
+    background-position: left top
+    background-size: contain
+
+.registration 
+    width: 50vw
+    padding-top: 100px
+    padding-left: 89px
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+
+    .registration--form 
+        & form 
+            display: flex
+            flex-direction: column
+            & h2 
+                margin-bottom: 24px
+                margin-left: 140px
+            
+            & input 
+                margin-bottom: 10px
+            
+            & button 
+                margin-top: 27px
+                margin-left: 140px
+            
+        
+        
+.auth 
+    position: absolute
+    padding-top: 100px
+    padding-left: 18px
+    width: 50vw
+    top: 0
+    bottom: 0
+    right: 0
+
+    .auth--form 
+        & form 
+            display: flex
+            flex-direction: column
+            & .button 
+                position: absolute
+                top: -100px
+            
+            & button 
+                margin-bottom: 63px
+                margin-left: 138px
+            
+        
+        & h2 
+            margin-bottom: 24px
+            margin-left: 200px
+        
+        & input 
+            margin-bottom: 10px
+        
+    
+        .submit_wrapper 
+            width: 494px
+            display: flex
+            justify-content: space-between
+            margin-bottom: 38px
+            & a 
+                cursor: pointer
+            
+            & label 
+                user-select: none
+                cursor: pointer
+                margin-left: 10px
+            
+        
+        .label::before 
+            content: ""
+            display: inline-block
+            position: relative
+            left: -10px
+            border-radius: 3px
+            width: 13px
+            height: 13px
+            border: 1px solid #2F5FED
+            
+        .checkbox:checked + .label::before 
+            content: ""
+            display: inline-block
+            position: relative
+            left: -10px
+            border-radius: 3px
+            width: 13px
+            height: 13px
+            border: 1px solid #2F5FED
+            background-image: url(../../img/login/checked.svg)
+            background-repeat: no-repeat
+            background-position: center
+            background-color: #2F5FED
+        
+        .checkbox 
+            position: absolute
+            opacity: 0
+            left: 20px
+        
+
+    .auth--sign_as 
+        display: flex
+        flex-direction: column
+        height: 200px
+        width: 190px
+        padding-left: 138px
+        justify-content: space-between
+        & p 
+            margin-left: 26px
+            font-size: 23px
+            line-height: 31px
+        
+        
+           
+.button 
+    position: absolute
+
+.button_login 
+    top: 45vh
+    right: 10vw
+
+.button_reg 
+    top: 45vh
+    left: 10vw
+

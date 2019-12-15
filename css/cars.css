@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto;
+  max-width: 1349px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px; }
+
+.main-pages {
+  width: 976px;
+  height: 300px; }
+
+.aside {
+  width: 349px;
+  background-color: #2193B0; }

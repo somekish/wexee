@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="./css/min/login.min.css")
+    body
+        .wrapper
+            a.go_home(href="../index.html")
+                <svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.8 -1.90735e-06L28.6 18L32.8 -1.90735e-06H40.6L33 28H25.4L20.6 10.6L15.8 28H8.2L0.6 -1.90735e-06H8.4L12.6 18L17.4 -1.90735e-06H23.8ZM66.4187 28H44.2187V-1.90735e-06H66.4187V5.6H51.4187V11H63.2187V16.6H51.4187V22.4H66.4187V28Z" fill="white"/><path d="M69.1694 0.479999H78.2494L95.7294 28H86.6094L69.1694 0.479999ZM83.8094 6.08L86.8494 0.479999H95.6094L88.0094 12.72L83.8094 6.08ZM76.6894 15.52L80.8494 22.12L77.7694 28H69.0094L76.6894 15.52ZM100.119 0.479999H108.119V28H100.119V0.479999ZM109.799 0.479999H119.959V6.6H109.799V0.479999ZM109.799 11.04H118.079V17.16H109.799V11.04ZM109.799 21.88H119.959V28H109.799V21.88Z" fill="#FFAB1D"/></svg>
+            .block1(id="block1")
+            .block2.hide(id="block2")
+            button.button.button_login.hide(type="button" tabindex="0" id="buttonAuth") Вход
+            button.button.button_reg(type="button" tabindex="0" id="buttonReg") Регистрация
+            .registration.hide(id="reg")
+                .registration--form
+                    form 
+                        h2.h2 Регистрация
+                        input.input(type="text", name="" placeholder="Имя и Фамилия")
+                        input.input(type="email", name="" placeholder="Логин или E-mail")
+                        input.input(type="password", name="" placeholder="Пароль")
+                        input.input(type="password", name="" placeholder="Повторите пароль")
+                        button.submit.animation1(type="submit") Регистрация
+                        
+            .auth(id="auth")
+                .auth--form
+                    form 
+                        h2.h2 Вход
+                        input.input(type="email", name="" placeholder="Логин" autofocus)
+                        input.input(type="password", name="" placeholder="Пароль")
+                        .submit_wrapper    
+                            .forgot_wrapper 
+                                input.checkbox(type="checkbox", id="checkbox" name="")
+                                label.label(for="checkbox").label Запомнить             
+                            a Забыли пароль?
+                        button.submit.animation2(type="submit") Вход
+                .auth--sign_as
+                    p Войти через
+                    a(href="http://")
+                        img(src="./img/login/icon1.png")
+                    a(href="http://")
+                        img(src="./img/login/icon2.png")
+                    a(href="http://")
+                        img(src="./img/login/icon3.png")    
+        script(src="js/login1.js") 
+
+
