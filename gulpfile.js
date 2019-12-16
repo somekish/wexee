@@ -28,7 +28,7 @@ gulp.task('sass', function() { // Создаем таск Sass
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         server: { // Определяем параметры сервера
-            baseDir: '../wexe' // Директория для сервера
+            baseDir: '../wexee' // Директория для сервера
         },
         notify: true //уведомления
     });
@@ -114,7 +114,7 @@ gulp.task('clear', function (callback) {
 gulp.task('watch', function() {
     gulp.watch('./pug/**/*.pug', gulp.parallel('pug'));
     gulp.watch('./sass/**/*.sass', gulp.parallel('sass')); // Наблюдение за sass файлами
-    gulp.watch(['./js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
+    gulp.watch(['./js/**/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 gulp.task('default', gulp.parallel('pug', 'sass', 'scripts', 'browser-sync', 'watch'));
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass', 'scripts'));

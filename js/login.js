@@ -15,7 +15,6 @@ buttonReg.addEventListener('click', function(){
     buttonAuth.classList.toggle('hide');
     setTimeout(block1.classList.toggle('hide'), 1000);
     block2.classList.toggle('hide');
-    
 });
 
 buttonAuth.addEventListener('click', function(){
@@ -27,3 +26,25 @@ buttonAuth.addEventListener('click', function(){
     setTimeout(block2.classList.toggle('hide'), 1000);
     block1.classList.toggle('hide');
 });
+
+
+// buttonReg.addEventListener('click', function(){
+//     setTimeout(block1.classList.add('go-left'), 1000);
+//     auth.classList.toggle('hide');
+//     reg.classList.toggle('hide');
+//     buttonReg.classList.toggle('hide');
+//     buttonAuth.classList.toggle('hide');
+//     setTimeout(block1.classList.toggle('hide'), 1000);
+//     block2.classList.toggle('hide');
+    
+// });
+
+// buttonAuth.addEventListener('click', function(){
+//     block2.classList.add('go-right');
+//     auth.classList.toggle('hide');
+//     reg.classList.toggle('hide');
+//     buttonReg.classList.toggle('hide');
+//     buttonAuth.classList.toggle('hide');
+//     setTimeout(block2.classList.toggle('hide'), 1000);
+//     block1.classList.toggle('hide');
+// });
