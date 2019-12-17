@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="./css/min/fonts.min.css">
 <link rel="stylesheet" href="./css/min/header.min.css">
 <link rel="stylesheet" href="./css/min/footer.min.css">
-<script src="./libs/modernizr/modernizr.js"></script><link rel="stylesheet" href="./css/min/media.min.css">
+    <link rel="stylesheet" href="./css/min/slider.min.css"><script src="./libs/modernizr/modernizr.js"></script><link rel="stylesheet" href="./css/min/media.min.css">
 <link rel="stylesheet" href="./css/min/main.min.css">
 <link rel="stylesheet" href="./css/min/categories.min.css">
   </head>
@@ -22,14 +22,14 @@
     <header class="body--header header">
       <div class="container">
         <nav class="header--nav nav">
-          <ul class="nav--ul nav_ul-right">
+          <ul class="nav--ul nav--ul-right">
             <li><a href="#">О компании</a></li>
             <li><a href="#">Помощь</a></li>
           </ul>
           <ul class="nav--ul nav_ul-center">
             <li><a class="nav--logo" href="./index.html"><svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.8 -1.90735e-06L28.6 18L32.8 -1.90735e-06H40.6L33 28H25.4L20.6 10.6L15.8 28H8.2L0.6 -1.90735e-06H8.4L12.6 18L17.4 -1.90735e-06H23.8ZM66.4187 28H44.2187V-1.90735e-06H66.4187V5.6H51.4187V11H63.2187V16.6H51.4187V22.4H66.4187V28Z" fill="white"/><path d="M69.1694 0.479999H78.2494L95.7294 28H86.6094L69.1694 0.479999ZM83.8094 6.08L86.8494 0.479999H95.6094L88.0094 12.72L83.8094 6.08ZM76.6894 15.52L80.8494 22.12L77.7694 28H69.0094L76.6894 15.52ZM100.119 0.479999H108.119V28H100.119V0.479999ZM109.799 0.479999H119.959V6.6H109.799V0.479999ZM109.799 11.04H118.079V17.16H109.799V11.04ZM109.799 21.88H119.959V28H109.799V21.88Z" fill="#FFAB1D"/></svg></a></li>
           </ul>
-          <ul class="nav--ul nav_ul-left">
+          <ul class="nav--ul nav--ul-left">
             <li><a href="#"><svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6269 1.41469C14.7367 0.524509 13.5582 0.0379726 12.3004 0.0379726C11.0426 0.0379726 9.86051 0.528113 8.97032 1.4183L8.50541 1.88321L8.03329 1.41109C7.14311 0.520906 5.9574 0.0271606 4.69961 0.0271606C3.44542 0.0271606 2.26332 0.517301 1.37674 1.40388C0.486557 2.29406 -0.00358424 3.47617 1.97344e-05 4.73396C1.97344e-05 5.99174 0.493765 7.17024 1.38395 8.06043L8.15222 14.8287C8.24592 14.9224 8.37206 14.9729 8.4946 14.9729C8.61713 14.9729 8.74327 14.926 8.83698 14.8323L15.6197 8.07484C16.5098 7.18466 17 6.00255 17 4.74477C17.0036 3.48698 16.5171 2.30487 15.6269 1.41469ZM14.9349 7.38648L8.4946 13.8016L2.0687 7.37567C1.36232 6.66929 0.973094 5.73226 0.973094 4.73396C0.973094 3.73565 1.35872 2.79862 2.0651 2.09584C2.76788 1.39307 3.70491 1.00384 4.69961 1.00384C5.69791 1.00384 6.63855 1.39307 7.34493 2.09945L8.15943 2.91395C8.35044 3.10496 8.65678 3.10496 8.84779 2.91395L9.65508 2.10666C10.3615 1.40028 11.3021 1.01105 12.2968 1.01105C13.2915 1.01105 14.2285 1.40028 14.9349 2.10305C15.6413 2.80943 16.0269 3.74646 16.0269 4.74477C16.0305 5.74307 15.6413 6.6801 14.9349 7.38648Z" fill="white"/></svg></a></li>
             <li><a href="./login.html">Вход и Регистрация</a></li>
             <li class="nav--button"><a href="#">Подать объявление</a></li>
@@ -37,7 +37,9 @@
         </nav>
       </div>
       <div class="header--form">
-        <h1>Найди любой товар в своем городе</h1>
+        <div class="wrapper_text">
+          <h1>Найди любой товар в своем городе</h1>
+        </div>
         <form action="URL">
           <input type="search" name="search" placeholder="Поиск" autofocus required>
           <select name="city choosing" required>

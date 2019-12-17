@@ -23,13 +23,13 @@
     text-align: center;
     margin-bottom: 90px; }
     .categories li:hover {
-      stroke: #c49158;
-        stroke-fill: #c49158; }
+      stroke: #7fb37f;
+        stroke-fill: #7fb37f; }
       .categories li:hover svg {
-        stroke: #c49158;
-        fill: #c49158;
-        -webkit-box-shadow: #c49158 5px 5px;
-                box-shadow: #c49158 5px 5px;
+        stroke: #7fb37f;
+        fill: #7fb37f;
+        -webkit-box-shadow: #7fb37f 5px 5px;
+                box-shadow: #7fb37f 5px 5px;
         -webkit-transition-duration: 1s;
              -o-transition-duration: 1s;
                 transition-duration: 1s; }

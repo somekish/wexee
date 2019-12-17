@@ -16,9 +16,9 @@ $main_gradient: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)
 html 
     overflow: hidden
 
-.go-home 
+.go_home 
     cursor: pointer
-
+    
 
 svg 
     position: absolute
@@ -38,9 +38,11 @@ svg
 
 .go-left 
     animation: go-left 1s
+    animation-fill-mode: forwards
 
 .go-right 
     animation: go-right 1s
+    animation-fill-mode: forwards
 
 .input 
     width: 477px
@@ -86,16 +88,6 @@ svg
         left: 55vw
         right: -100px
         transform: rotate(-10deg)
-    
-
-.block2 
-    background: $main_gradient
-    position: absolute
-    top: -300px
-    bottom: -300px
-    left: 55vw
-    right: -100px
-    transform: rotate(-10deg)
 
 @keyframes go-left 
     0% 

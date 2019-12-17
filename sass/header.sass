@@ -1,7 +1,8 @@
 $main_gradient: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)
 $font_size_normal: 16px
 $line_height_normal: 19px
-$hover: rgb(196, 145, 88)
+$hover: rgb(127, 179, 127)
+$duration: 0.7s
 
 * 
 	margin: 0
@@ -51,12 +52,7 @@ h2
 		margin-top: 25px
 		display: flex
 		padding: 0px 20px
-		&:hover 
-			transition-duration: 1s
-			background-color: $hover
-			border-radius: 100px
 		
-	
 	& a 
 		vertical-align: middle
 		color: white
@@ -67,12 +63,18 @@ h2
 		margin-right: 19px
 	
 
-
+.nav--ul-right, .nav--ul-left
+	& li:hover 
+		transition-duration: $duration
+		background-color: $hover
+		border-radius: 100px
 .nav--button 
 	background-color: white
 	border-radius: 100px
 	& a 
-		color: black
+		color: #000000e5
+		&:hover
+			color: white
 		
 
 // Форма поиска
@@ -95,7 +97,6 @@ h2
 		border-radius: 3px
 		border: none
 		padding: 0 20px
-	
 	& select 
 		flex-basis: 163px
 		display: block
@@ -114,14 +115,23 @@ h2
 		box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25)
 		border-radius: 3px
 		border: none
+		&:hover p
+			color: white 
+		&:hover svg
+			stroke: white
 		&:hover 
 			background-color: $hover
-			transition-duration: 1s
-		
+			transition-duration: $duration
+			
+				
+		& svg 
+			position: relative
+			top: 2px
 		& p 
 			margin-left: 10px
-		
-	
+.wrapper_text 
+	margin-bottom: 40px		
+
 
 // main 
 .nav--logo 

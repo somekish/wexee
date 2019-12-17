@@ -14,7 +14,7 @@
 html {
   overflow: hidden; }
 
-.go-home {
+.go_home {
   cursor: pointer; }
 
 svg {
@@ -35,11 +35,15 @@ svg {
 
 .go-left {
   -webkit-animation: go-left 1s;
-          animation: go-left 1s; }
+          animation: go-left 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .go-right {
   -webkit-animation: go-right 1s;
-          animation: go-right 1s; }
+          animation: go-right 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .input {
   width: 477px;
@@ -103,19 +107,6 @@ svg {
     right: -100px;
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg); } }
-
-.block2 {
-  background: -webkit-gradient(linear, left top, right top, from(#0052D4), color-stop(50%, #4364F7), to(#6FB1FC));
-  background: -o-linear-gradient(left, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
-  background: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
-  position: absolute;
-  top: -300px;
-  bottom: -300px;
-  left: 55vw;
-  right: -100px;
-  -webkit-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-          transform: rotate(-10deg); }
 
 @-webkit-keyframes go-left {
   0% {
